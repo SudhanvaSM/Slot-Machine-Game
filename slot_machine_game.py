@@ -8,17 +8,19 @@ ROWS = 3
 COLS = 3
 
 symbol_count = {
-    'A' : 2,
-    'B' : 4,
-    'C' : 6,
-    'D' : 8
+    '🍒' : 2,
+    '🍉' : 3,
+    '🍋' : 4,
+    '🔔' : 5,
+    '⭐' : 4,
 }
 
 symbol_value = {
-    'A' : 4,
-    'B' : 3,
-    'C' : 2,
-    'D' : 1
+    '🍒' : 5,
+    '🍉' : 4,
+    '🍋' : 3,
+    '🔔' : 2,
+    '⭐' : 3,
 }
 
 def get_slot_spin(rows,cols,symbols):
@@ -81,7 +83,7 @@ def deposit():
 
 def get_lines():
     while True:
-        lines = input(f"How many lines would you like to bet on (1- {MAX_LINES}): ")
+        lines = input(f"How many lines would you like to bet on (1-{MAX_LINES}): ")
         if lines.isdigit():
             lines = int(lines)
             if 1 <= lines <= MAX_LINES:
